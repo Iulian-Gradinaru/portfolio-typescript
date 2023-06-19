@@ -1,4 +1,3 @@
-// import { HomeHeaderProps } from './HomeHeader.types';
 import Portret from '../../assets/portret.jpg';
 import { Container, Title, Img, Descriptions } from './HomeHeader.styles';
 

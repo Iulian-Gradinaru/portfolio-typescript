@@ -9,7 +9,7 @@ export const Container = styled('div')(() => {
     alignItems: 'center',
     margin: '-7px',
     padding: '3rem 1rem',
-    maxWidth: '',
+    // maxWidth: '',
   };
 });
 
