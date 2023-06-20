@@ -6,9 +6,8 @@ import {
   Container,
   GridImg,
   CustomImg,
-  // CustomBox,
   CustomButton,
-  CustomGrid,
+  // CustomGrid,
 } from './HomeDescription.styles';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -50,62 +49,60 @@ export const HomeDescription: React.FC = () => {
             <Link to="/projects">View Portfolio</Link>
           </CustomButton>
         </Grid>
-
-        <CustomGrid
-          container
-          justifyContent="space-between"
-          direction="row"
-          spacing={7}
-          xs={12}
-          sm={10}
-          md={11}
-          lg={8}
-          xl={7}
-        >
-          <Grid item xs={12} sm={6} md={6} lg={6}>
-            <Box>
-              <Typography variant="h4" gutterBottom>
-                <FontAwesomeIcon size="sm" icon={faBolt} color="red" /> Fast
-              </Typography>
-              <Typography variant="h6">
-                Fast load times and lag free interactions are my highest
-                priority.
-              </Typography>
-            </Box>
-          </Grid>
-          <Grid item xs={12} sm={6} md={6} lg={6}>
-            <Box>
-              <Typography variant="h4" gutterBottom>
-                <FontAwesomeIcon size="sm" icon={faMobileAlt} /> Responsive
-              </Typography>
-              <Typography variant="h6">
-                My layouts will work on any device, big or small.
-              </Typography>
-            </Box>
-          </Grid>
-          <Grid item xs={12} sm={6} md={6} lg={6}>
-            <Box>
-              <Typography variant="h4" gutterBottom>
-                <FontAwesomeIcon size="sm" icon={faPencilRuler} /> Intuitive
-              </Typography>
-              <Typography variant="h6">
-                I value simple content structure, clean design patterns, and
-                thoughtful interactions.
-              </Typography>
-            </Box>
-          </Grid>
-          <Grid item xs={12} sm={6} md={6} lg={6}>
-            <Box>
-              <Typography variant="h4" gutterBottom>
-                <FontAwesomeIcon size="sm" icon={faCogs} /> Dynamic
-              </Typography>
-              <Typography variant="h6">
-                Websites don't have to be static, I love making pages come to
-                life.
-              </Typography>
-            </Box>
-          </Grid>
-        </CustomGrid>
+      </Grid>
+      <Grid
+        container
+        justifyContent="space-between"
+        direction="row"
+        spacing={7}
+        xs={12}
+        sm={10}
+        md={11}
+        lg={8}
+        xl={7}
+      >
+        <Grid item xs={12} sm={6} md={6} lg={6}>
+          <Box>
+            <Typography variant="h4" gutterBottom>
+              <FontAwesomeIcon size="sm" icon={faBolt} color="red" /> Fast
+            </Typography>
+            <Typography variant="h6">
+              Fast load times and lag free interactions are my highest priority.
+            </Typography>
+          </Box>
+        </Grid>
+        <Grid item xs={12} sm={6} md={6} lg={6}>
+          <Box>
+            <Typography variant="h4" gutterBottom>
+              <FontAwesomeIcon size="sm" icon={faMobileAlt} /> Responsive
+            </Typography>
+            <Typography variant="h6">
+              My layouts will work on any device, big or small.
+            </Typography>
+          </Box>
+        </Grid>
+        <Grid item xs={12} sm={6} md={6} lg={6}>
+          <Box>
+            <Typography variant="h4" gutterBottom>
+              <FontAwesomeIcon size="sm" icon={faPencilRuler} /> Intuitive
+            </Typography>
+            <Typography variant="h6">
+              I value simple content structure, clean design patterns, and
+              thoughtful interactions.
+            </Typography>
+          </Box>
+        </Grid>
+        <Grid item xs={12} sm={6} md={6} lg={6}>
+          <Box>
+            <Typography variant="h4" gutterBottom>
+              <FontAwesomeIcon size="sm" icon={faCogs} /> Dynamic
+            </Typography>
+            <Typography variant="h6">
+              Websites don't have to be static, I love making pages come to
+              life.
+            </Typography>
+          </Box>
+        </Grid>
       </Grid>
     </Container>
   );

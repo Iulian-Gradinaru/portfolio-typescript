@@ -7,20 +7,21 @@ export const Container = styled('div')(() => {
     justifyContent: 'space-between',
     alignItems: 'center',
     flexDirection: 'column',
-    paddingTop: '3em',
+    // paddingTop: '3em',
     backgroundColor: '#F7E6C4',
     margin: '-7px',
+    padding: '3rem 1rem',
   };
 });
 
-export const CustomGrid = styled(Grid)(() => {
-  return {
-    display: 'flex',
-    justifyContent: 'space-between',
-    width: '100%',
-    flexWrap: 'wrap',
-  };
-});
+// export const CustomGrid = styled(Grid)(() => {
+//   return {
+//     display: 'flex',
+//     justifyContent: 'space-between',
+//     width: '100%',
+//     flexWrap: 'wrap',
+//   };
+// });
 
 export const GridImg = styled(Grid)(() => {
   return {
