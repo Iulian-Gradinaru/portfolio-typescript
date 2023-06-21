@@ -2,7 +2,8 @@ import React from 'react';
 import { Fragment } from 'react';
 import { HomeHeader } from '../HomeHeader';
 import { HomeDescription } from '../HomeDescription';
-import { HomeSkils } from '../HomeSkils';
+import { HomeSkils } from '../HomeSkills';
+import { HomeContact } from '../HomeContact';
 
 export const Home: React.FC = () => {
   return (
@@ -10,6 +11,7 @@ export const Home: React.FC = () => {
       <HomeHeader />
       <HomeDescription />
       <HomeSkils />
+      <HomeContact />
     </Fragment>
   );
 };

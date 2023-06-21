@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCode, faServer, faTools } from '@fortawesome/free-solid-svg-icons';
 import { Grid, Box, Typography } from '@mui/material';
 import { v4 } from 'uuid';
-import { Container, StyledChip } from './HomeSkils.styles';
+import { Container, StyledChip } from './HomeSkills.styles';
 /**
  * Imports skills
  */
