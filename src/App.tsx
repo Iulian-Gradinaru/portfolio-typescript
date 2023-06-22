@@ -4,7 +4,7 @@ import './App.css';
 
 import { NavBar } from './components/NavBar';
 import { Home } from './components/Home';
-import { Projects } from './components/Projects/Projects';
+import { Portofolio } from './components/Portofolio';
 import { Footer } from './components/Footer';
 
 export const App: React.FC = () => {
@@ -14,7 +14,7 @@ export const App: React.FC = () => {
       <div>
         <Switch>
           <Route exact path="/" render={Home} />
-          <Route exact path="/projects" render={Projects} />
+          <Route exact path="/projects" render={Portofolio} />
           <Route path="*" render={Home} />
         </Switch>
         <Footer />

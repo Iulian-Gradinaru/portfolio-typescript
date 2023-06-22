@@ -14,15 +14,6 @@ export const Container = styled('div')(() => {
   };
 });
 
-// export const CustomGrid = styled(Grid)(() => {
-//   return {
-//     display: 'flex',
-//     justifyContent: 'space-between',
-//     width: '100%',
-//     flexWrap: 'wrap',
-//   };
-// });
-
 export const GridImg = styled(Grid)(() => {
   return {
     width: '100%',
