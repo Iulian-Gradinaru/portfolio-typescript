@@ -51,9 +51,42 @@ export const Stacklinks = styled(Box)(() => {
   };
 });
 
-// export const StylesBox = styled(Box)(() => {
-//   return {
-//     width: '100%',
-//     height: '100%',
-//   };
-// });
+export const ImageContainer = styled('div')(() => {
+  return {
+    display: 'flex',
+    justifyContent: 'flex-end',
+    alignItems: 'flex-end',
+    width: '100%',
+    height: '100%',
+    border: '2px solid red',
+  };
+});
+
+export const LargeImageDiv = styled('div')(() => {
+  return {
+    display: 'flex',
+    width: 'auto',
+    border: '2px solid red',
+  };
+});
+
+export const TabletImageDiv = styled('div')(() => {
+  return {
+    zIndex: 2,
+    border: '3px solid blue',
+  };
+});
+
+export const MobileImageDiv = styled('div')(() => {
+  return {
+    zIndex: 1,
+    border: '3px solid green',
+  };
+});
+
+export const StylesImage = styled('img')(() => {
+  return {
+    width: '100%',
+    height: 'auto',
+  };
+});

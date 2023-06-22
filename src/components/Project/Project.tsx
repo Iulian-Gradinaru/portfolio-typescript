@@ -31,10 +31,15 @@ import { ProjectProps } from './Project.types';
 import {
   CustomGrid,
   CustomChip,
-  CustomImg,
+  // CustomImg,
   CustomBox,
   Stacklinks,
   StackBox,
+  TabletImageDiv,
+  ImageContainer,
+  LargeImageDiv,
+  StylesImage,
+  MobileImageDiv,
 } from './Project.styles';
 
 /**
@@ -111,7 +116,19 @@ export const Project: React.FC<ProjectProps> = (props) => {
   return (
     <Fragment>
       <Grid item xs={12} sm={12} md={7} lg={7}>
-        <CustomImg src={project.imgUrl} alt="example-responsive" />
+        <ImageContainer>
+          <LargeImageDiv>
+            <StylesImage src={project.imgUrl} alt="example-responsive" />
+          </LargeImageDiv>
+          <TabletImageDiv>
+            <StylesImage src={project.imgUrl2} alt="example-responsive" />
+          </TabletImageDiv>
+          <MobileImageDiv>
+            <StylesImage src={project.imgUrl3} alt="example-responsive" />
+          </MobileImageDiv>
+        </ImageContainer>
+
+        {/* <CustomImg src={project.imgUrl} alt="example-responsive" /> */}
       </Grid>
       <CustomGrid item xs={12} sm={12} md={5} lg={5}>
         <CustomBox>
