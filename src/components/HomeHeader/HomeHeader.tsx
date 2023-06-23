@@ -1,4 +1,4 @@
-import Portret from '../../assets/portret.jpg';
+import Portret from '../../assets/portret-eu.jpeg';
 import { Container, Title, Img, Descriptions } from './HomeHeader.styles';
 
 export const HomeHeader: React.FC = () => {

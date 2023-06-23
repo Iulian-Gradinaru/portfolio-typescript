@@ -21,6 +21,7 @@ export const HomeContact: React.FC = () => {
         justifyContent="center"
         alignItems="center"
         direction="column"
+        item
         spacing={2}
         xs={11}
         sm={9}

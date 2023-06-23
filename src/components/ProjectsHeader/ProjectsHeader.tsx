@@ -14,6 +14,7 @@ export const ProjectsHeader: React.FC = () => {
         justifyContent="center"
         alignItems="center"
         direction="column"
+        item
         xs={12}
         sm={10}
         md={8}

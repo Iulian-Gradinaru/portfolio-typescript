@@ -50,6 +50,7 @@ export const Projects: React.FC = () => {
         justifyContent="center"
         direction="row"
         spacing={6}
+        item
         xs={12}
         sm={10}
         md={11}

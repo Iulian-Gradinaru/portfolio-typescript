@@ -16,6 +16,7 @@ export const HomeSkils: React.FC = () => {
         container
         justifyContent="center"
         direction="row"
+        item
         spacing={3}
         xs={12}
         sm={10}

@@ -26,6 +26,7 @@ export const HomeDescription: React.FC = () => {
         direction="row"
         alignItems="center"
         spacing={3}
+        item
         xs={11}
         sm={10}
         md={11}
@@ -55,6 +56,7 @@ export const HomeDescription: React.FC = () => {
         justifyContent="space-between"
         direction="row"
         spacing={7}
+        item
         xs={12}
         sm={10}
         md={11}

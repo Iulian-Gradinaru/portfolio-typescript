@@ -54,33 +54,49 @@ export const Stacklinks = styled(Box)(() => {
 export const ImageContainer = styled('div')(() => {
   return {
     display: 'flex',
-    justifyContent: 'flex-end',
-    alignItems: 'flex-end',
+    justifyContent: 'flex-start',
+    alignItems: 'center',
+    marginTop: 30,
     width: '100%',
-    height: '100%',
-    border: '2px solid red',
+    height: '80%',
   };
 });
 
 export const LargeImageDiv = styled('div')(() => {
   return {
     display: 'flex',
-    width: 'auto',
-    border: '2px solid red',
+    width: '87%',
+    height: '73%',
+    border: '10px solid #E0E0E0',
+    borderRadius: 10,
   };
 });
 
 export const TabletImageDiv = styled('div')(() => {
   return {
     zIndex: 2,
-    border: '3px solid blue',
+    border: '10px solid #E0E0E0',
+    display: 'flex',
+    width: '31%',
+    height: '37%',
+    margin: -185,
+    marginTop: 3,
+    borderRadius: 10,
   };
 });
 
 export const MobileImageDiv = styled('div')(() => {
   return {
-    zIndex: 1,
-    border: '3px solid green',
+    zIndex: 2,
+
+    border: '10px solid #E0E0E0',
+    display: 'flex',
+    width: '17%',
+    height: '32%',
+    margin: -2,
+    marginTop: 219,
+    marginLeft: 131,
+    borderRadius: 10,
   };
 });
 
@@ -88,5 +104,6 @@ export const StylesImage = styled('img')(() => {
   return {
     width: '100%',
     height: 'auto',
+    objectFit: 'cover',
   };
 });

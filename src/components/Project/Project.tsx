@@ -21,7 +21,6 @@ import {
 /**
  * Imports Material UI Icons
  */
-// import { GitHub as GitHubIcon, Language as LanguageIcon } from "@material-ui/icons";
 
 import LanguageSharpIcon from '@mui/icons-material/LanguageSharp';
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -31,7 +30,6 @@ import { ProjectProps } from './Project.types';
 import {
   CustomGrid,
   CustomChip,
-  // CustomImg,
   CustomBox,
   Stacklinks,
   StackBox,
@@ -47,11 +45,6 @@ import {
  */
 export const Project: React.FC<ProjectProps> = (props) => {
   const { project } = props;
-
-  // /**
-  //  * Gets the component styles
-  //  */
-  // const classes = useStyles();
 
   /**
    * Handles generating stack chips
@@ -121,14 +114,12 @@ export const Project: React.FC<ProjectProps> = (props) => {
             <StylesImage src={project.imgUrl} alt="example-responsive" />
           </LargeImageDiv>
           <TabletImageDiv>
-            <StylesImage src={project.imgUrl2} alt="example-responsive" />
+            <StylesImage src={project.imgUrl} alt="example-responsive" />
           </TabletImageDiv>
           <MobileImageDiv>
-            <StylesImage src={project.imgUrl3} alt="example-responsive" />
+            <StylesImage src={project.imgUrl} alt="example-responsive" />
           </MobileImageDiv>
         </ImageContainer>
-
-        {/* <CustomImg src={project.imgUrl} alt="example-responsive" /> */}
       </Grid>
       <CustomGrid item xs={12} sm={12} md={5} lg={5}>
         <CustomBox>
