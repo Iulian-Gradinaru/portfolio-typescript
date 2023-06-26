@@ -58,13 +58,16 @@ export const CustomNavLink = styled(NavLink, {
     width: '0%',
     height: 4,
     display: 'block',
-    backgroundColor: 'white',
+    backgroundColor: '#F7E6C4',
     content: '""',
     position: 'absolute',
     top: 34,
     left: '50%',
     transition:
       'left 0.4s cubic-bezier(0.215, 0.61, 0.355, 1), width 0.4s cubic-bezier(0.215, 0.61, 0.355, 1)',
+  },
+  '&:hover': {
+    color: '#F7E6C4',
   },
   '&:hover::after': {
     width: '100%',

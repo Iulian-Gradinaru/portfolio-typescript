@@ -39,12 +39,12 @@ export const CustomButton = styled(Button)(() => {
 
     '& a': {
       textDecoration: 'none',
-      color: 'white',
+      color: '#606C5D',
     },
     '&:hover': {
-      backgroundColor: '#fc601f',
+      backgroundColor: '#F7E6C4',
       '& a': {
-        color: 'white',
+        color: '#606C5D',
       },
     },
   };

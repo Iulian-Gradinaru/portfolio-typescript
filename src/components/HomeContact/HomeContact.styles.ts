@@ -28,9 +28,9 @@ export const StylesButton = styled(Button)(() => {
     backgroundColor: '#F1C376',
     borderRadius: 10,
     border: '2px solid #606C5D',
-    color: 'white',
+    color: '#606C5D',
     '&:hover': {
-      backgroundColor: '#fc601f',
+      backgroundColor: '#F7E6C4',
     },
   };
 });
