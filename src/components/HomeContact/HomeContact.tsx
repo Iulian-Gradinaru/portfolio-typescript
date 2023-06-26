@@ -30,21 +30,15 @@ export const HomeContact: React.FC = () => {
         xl={4}
       >
         <Typography variant="h4">
-          <FontAwesomeIcon size="sm" icon={faLightbulb} />
+          <FontAwesomeIcon size="sm" icon={faLightbulb} color="#F1C376" />{' '}
           Interested in hiring or collaborating?
         </Typography>
         <StylesTypography variant="h6">
           Whether you have a question about a project, if you are interested in
           hiring or collaborating. I'd love to hear from you!
         </StylesTypography>
-        <StylesButton size="large" variant="outlined" onClick={handleClick}>
-          Let's Talk!
-        </StylesButton>
-        <StyledChip
-          // color="secondary"
-          variant="outlined"
-          label="iulian_gradinaru@yahoo.com "
-        />
+        <StylesButton onClick={handleClick}>Let's Talk!</StylesButton>
+        <StyledChip variant="outlined" label="iulian_gradinaru@yahoo.com " />
       </Grid>
     </Container>
   );

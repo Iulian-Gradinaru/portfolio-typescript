@@ -11,6 +11,7 @@ export const Container = styled('div')(() => {
     alignItems: 'center',
     textAlign: 'center',
     margin: '-7px',
+    color: '#606C5D',
   };
 });
 
@@ -22,21 +23,14 @@ export const StylesTypography = styled(Typography)(() => {
 
 export const StylesButton = styled(Button)(() => {
   return {
+    fontSize: 25,
     marginTop: '2rem',
     backgroundColor: '#F1C376',
     borderRadius: 10,
-    border: '2px solid #000000',
+    border: '2px solid #606C5D',
     color: 'white',
-
-    '& a': {
-      textDecoration: 'none',
-      color: 'white',
-    },
     '&:hover': {
-      '& a': {
-        backgroundColor: '#696969',
-        color: 'white',
-      },
+      backgroundColor: '#fc601f',
     },
   };
 });
@@ -46,6 +40,7 @@ export const StyledChip = styled(Chip)(() => {
     marginTop: '2rem',
     fontSize: '1.2rem',
     backgroundColor: '#F7E6C4',
-    color: 'black',
+    color: '#606C5D',
+    border: '2px solid #606C5D',
   };
 });

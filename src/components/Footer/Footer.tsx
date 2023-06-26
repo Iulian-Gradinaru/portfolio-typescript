@@ -10,13 +10,21 @@ export const Footer: React.FC = () => {
     <Container>
       <StylesBox>
         <StylesTypography variant="h6">
-          <FontAwesomeIcon size="lg" icon={faGithub} />
+          <FontAwesomeIcon
+            size="lg"
+            icon={faGithub}
+            style={{ color: '#F1C376' }}
+          />{' '}
           <Link target="_blank" href="https://github.com/Iulian-Gradinaru">
             GitHub
           </Link>
         </StylesTypography>
         <StylesTypography variant="h6">
-          <FontAwesomeIcon size="lg" icon={faLinkedin} />
+          <FontAwesomeIcon
+            size="lg"
+            icon={faLinkedin}
+            style={{ color: '#F1C376' }}
+          />
           <Link
             target="_blank"
             href="https://www.linkedin.com/in/iulian-gradinaru/"

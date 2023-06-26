@@ -3,7 +3,7 @@ export const frontEndSkills = [
   'CSS3',
   'TypeScript',
   'JavaScript',
-  // "Bootstrap4",
+  'Bootstrap4',
   'React',
   // "Redux",
   // "NextJS",
@@ -12,7 +12,7 @@ export const frontEndSkills = [
 
 export const backEndSkills = [
   'NodeJS',
-  // 'TypeScript',
+  'TypeScript',
   'ExpressJS',
   // 'MongoDB',
   'PostgreSQL',

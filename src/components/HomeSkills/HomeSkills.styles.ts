@@ -1,5 +1,5 @@
 import { styled } from '@mui/system';
-import { Chip } from '@mui/material';
+import { Chip, Grid } from '@mui/material';
 
 export const Container = styled('div')(() => {
   return {
@@ -10,18 +10,28 @@ export const Container = styled('div')(() => {
     padding: '3rem 1rem',
     backgroundColor: '#F1C376',
     margin: '-7px',
+    color: '#606C5D',
+  };
+});
+
+export const GridContainer = styled(Grid)(() => {
+  return {
+    color: '#606C5D',
+    '& > *:not(:last-child)': {
+      borderRight: '5px solid #606C5D',
+      paddingRight: 3,
+    },
   };
 });
 
 export const StyledChip = styled(Chip)(() => {
   return {
-    marginTop: '1rem',
-    marginRight: '0.8rem',
-    fontSize: '1.2rem',
-    border: '1px solid, #F7E6C4',
-    fontWeight: 'bold',
     backgroundColor: '#F1C376',
-    color: 'black',
-    // Alte stiluri
+    marginTop: '1rem',
+    marginRight: '0.6rem',
+    fontSize: '1.2rem',
+    border: '2px solid #606C5D',
+    color: 'white',
+    height: 40,
   };
 });

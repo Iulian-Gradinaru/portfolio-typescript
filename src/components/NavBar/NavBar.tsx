@@ -16,10 +16,10 @@ export const NavBar = () => {
         </Paragraph>
       </ContainerParagraph>
       <ContainerLinks>
-        <CustomNavLink exact to="/" activeStyle={{ color: '#ff0808' }}>
+        <CustomNavLink exact={true} to="/" activeStyle={{ color: 'white' }}>
           Home
         </CustomNavLink>
-        <CustomNavLink exact to="/projects" activeStyle={{ color: '#ff0808' }}>
+        <CustomNavLink exact to="/projects" activeStyle={{ color: 'white' }}>
           Projects
         </CustomNavLink>
       </ContainerLinks>

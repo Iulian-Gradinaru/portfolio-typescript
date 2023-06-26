@@ -9,7 +9,7 @@ export const Container = styled('div')(() => {
     alignItems: 'center',
     margin: '-7px',
     padding: '3rem 1rem',
-    // maxWidth: '',
+    color: '#606C5D',
   };
 });
 
@@ -28,8 +28,7 @@ export const Img = styled('img')(() => {
   return {
     width: '11rem',
     height: '11rem',
-    // margin: '3rem 0',
-    boxShadow: '0 0 3pt 2pt red',
+    boxShadow: '0 0 3pt 2pt white',
     display: 'flex',
     overflow: 'hidden',
     position: 'relative',

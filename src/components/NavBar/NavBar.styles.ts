@@ -4,7 +4,6 @@ import { CustomNavLinkProps } from './NavBar.types';
 
 export const Container = styled('nav')(() => ({
   backgroundColor: '#F1C376',
-  // backgroundColor: '#e5e7eb',
   height: '8vh',
   display: 'flex',
   justifyContent: 'flex-end',
@@ -12,11 +11,8 @@ export const Container = styled('nav')(() => ({
   padding: 10,
   fontSize: 23,
   gap: 20,
-  color: 'black',
+  color: '#606C5D',
   margin: '-7px',
-  // paddingLeft: 24,
-
-  // width: '100%',
 }));
 
 export const ContainerParagraph = styled('div')(() => {
@@ -30,6 +26,15 @@ export const ContainerParagraph = styled('div')(() => {
   };
 });
 
+export const Paragraph = styled('p')(() => ({
+  display: 'flex',
+  justifyContent: 'flex-start',
+  alignItems: 'center',
+  margin: 0,
+  paddingLeft: 22,
+  letterSpacing: '0.1rem',
+}));
+
 export const ContainerLinks = styled('div')(() => {
   return {
     paddingRight: 36,
@@ -37,14 +42,6 @@ export const ContainerLinks = styled('div')(() => {
     gap: 20,
   };
 });
-
-export const Paragraph = styled('p')(() => ({
-  display: 'flex',
-  justifyContent: 'flex-start',
-  alignItems: 'center',
-  margin: 0,
-  paddingLeft: 22,
-}));
 
 export const CustomNavLink = styled(NavLink, {
   shouldForwardProp: (propName) => propName !== 'isActive',
@@ -56,11 +53,12 @@ export const CustomNavLink = styled(NavLink, {
   textAlign: 'center',
   fontSize: 30,
   position: 'relative',
+  color: '#606C5D',
   '&::after': {
     width: '0%',
     height: 4,
     display: 'block',
-    backgroundColor: '#000',
+    backgroundColor: 'white',
     content: '""',
     position: 'absolute',
     top: 34,
@@ -72,8 +70,10 @@ export const CustomNavLink = styled(NavLink, {
     width: '100%',
     top: 34,
     left: '0',
+    color: '#606C5D',
   },
   ...(isActive && {
+    color: '#606C5D',
     '&::after': {
       width: '100%',
       top: 34,

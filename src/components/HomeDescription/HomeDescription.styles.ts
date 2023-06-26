@@ -7,10 +7,11 @@ export const Container = styled('div')(() => {
     justifyContent: 'space-between',
     alignItems: 'center',
     flexDirection: 'column',
-    // paddingTop: '3em',
+
     backgroundColor: '#F7E6C4',
     margin: '-7px',
     padding: '3rem 1rem',
+    color: '#606C5D',
   };
 });
 
@@ -30,8 +31,9 @@ export const CustomImg = styled('img')(() => {
 
 export const CustomButton = styled(Button)(() => {
   return {
+    fontSize: 25,
     marginTop: '2rem',
-    backgroundColor: 'red',
+    backgroundColor: '#F1C376',
     borderRadius: 10,
     border: '2px solid black',
 
@@ -40,8 +42,9 @@ export const CustomButton = styled(Button)(() => {
       color: 'white',
     },
     '&:hover': {
+      backgroundColor: '#fc601f',
       '& a': {
-        color: 'blue',
+        color: 'white',
       },
     },
   };

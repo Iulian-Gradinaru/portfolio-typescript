@@ -3,7 +3,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCode, faServer, faTools } from '@fortawesome/free-solid-svg-icons';
 import { Grid, Box, Typography } from '@mui/material';
 import { v4 } from 'uuid';
-import { Container, StyledChip } from './HomeSkills.styles';
+import { Container, StyledChip, GridContainer } from './HomeSkills.styles';
+
 /**
  * Imports skills
  */
@@ -12,7 +13,7 @@ import { devTools, frontEndSkills, backEndSkills } from '../utils/index';
 export const HomeSkils: React.FC = () => {
   return (
     <Container>
-      <Grid
+      <GridContainer
         container
         justifyContent="center"
         direction="row"
@@ -28,7 +29,8 @@ export const HomeSkils: React.FC = () => {
           <Box>
             <Box>
               <Typography variant="h4" gutterBottom>
-                <FontAwesomeIcon size="sm" icon={faCode} /> Front-End
+                <FontAwesomeIcon size="sm" icon={faCode} color="#F7E6C4" />{' '}
+                Front-End
               </Typography>
             </Box>
             <Box>
@@ -42,7 +44,7 @@ export const HomeSkils: React.FC = () => {
               {frontEndSkills.map((i: string) => (
                 <StyledChip
                   key={v4()}
-                  color="secondary"
+                  // color="secondary"
                   variant="outlined"
                   label={i}
                 />
@@ -50,11 +52,13 @@ export const HomeSkils: React.FC = () => {
             </Box>
           </Box>
         </Grid>
+
         <Grid item sm={12} md={4} lg={4}>
           <Box>
             <Box>
               <Typography variant="h4" gutterBottom>
-                <FontAwesomeIcon size="sm" icon={faServer} /> Back-End
+                <FontAwesomeIcon size="sm" icon={faServer} color="#F7E6C4" />{' '}
+                Back-End
               </Typography>
             </Box>
             <Box>
@@ -67,7 +71,7 @@ export const HomeSkils: React.FC = () => {
               {backEndSkills.map((i: string) => (
                 <StyledChip
                   key={v4()}
-                  color="secondary"
+                  // color="secondary"
                   variant="outlined"
                   label={i}
                 />
@@ -75,11 +79,13 @@ export const HomeSkils: React.FC = () => {
             </Box>
           </Box>
         </Grid>
+        {/* <Line /> */}
         <Grid item sm={12} md={4} lg={4}>
           <Box>
             <Box>
               <Typography variant="h4" gutterBottom>
-                <FontAwesomeIcon size="sm" icon={faTools} /> Dev-Tools & Others
+                <FontAwesomeIcon size="sm" icon={faTools} color="#F7E6C4" />{' '}
+                Dev-Tools & Others
               </Typography>
             </Box>
             <Box>
@@ -92,7 +98,7 @@ export const HomeSkils: React.FC = () => {
               {devTools.map((i: string) => (
                 <StyledChip
                   key={v4()}
-                  color="secondary"
+                  // color="secondary"
                   variant="outlined"
                   label={i}
                 />
@@ -100,7 +106,7 @@ export const HomeSkils: React.FC = () => {
             </Box>
           </Box>
         </Grid>
-      </Grid>
+      </GridContainer>
     </Container>
   );
 };

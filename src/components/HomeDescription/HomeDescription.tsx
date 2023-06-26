@@ -7,7 +7,6 @@ import {
   GridImg,
   CustomImg,
   CustomButton,
-  // CustomGrid,
 } from './HomeDescription.styles';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -38,8 +37,8 @@ export const HomeDescription: React.FC = () => {
         </GridImg>
         <Grid item xs={12} sm={12} md={5} lg={5} xl={5}>
           <Typography variant="h4" gutterBottom>
-            <FontAwesomeIcon size="sm" icon={faFireAlt} /> Blazing Fast Web
-            Applications
+            <FontAwesomeIcon size="sm" icon={faFireAlt} color="#F1C376" />{' '}
+            Blazing Fast Web Applications
           </Typography>
           <Typography variant="h6">
             Fast load times and lag free interactions, responsive design that
@@ -66,7 +65,7 @@ export const HomeDescription: React.FC = () => {
         <Grid item xs={12} sm={6} md={6} lg={6}>
           <Box>
             <Typography variant="h4" gutterBottom>
-              <FontAwesomeIcon size="sm" icon={faBolt} color="red" /> Fast
+              <FontAwesomeIcon size="sm" icon={faBolt} color="#F1C376" /> Fast
             </Typography>
             <Typography variant="h6">
               Fast load times and lag free interactions are my highest priority.
@@ -76,7 +75,8 @@ export const HomeDescription: React.FC = () => {
         <Grid item xs={12} sm={6} md={6} lg={6}>
           <Box>
             <Typography variant="h4" gutterBottom>
-              <FontAwesomeIcon size="sm" icon={faMobileAlt} /> Responsive
+              <FontAwesomeIcon size="sm" icon={faMobileAlt} color="#F1C376" />{' '}
+              Responsive
             </Typography>
             <Typography variant="h6">
               My layouts will work on any device, big or small.
@@ -86,7 +86,8 @@ export const HomeDescription: React.FC = () => {
         <Grid item xs={12} sm={6} md={6} lg={6}>
           <Box>
             <Typography variant="h4" gutterBottom>
-              <FontAwesomeIcon size="sm" icon={faPencilRuler} /> Intuitive
+              <FontAwesomeIcon size="sm" icon={faPencilRuler} color="#F1C376" />{' '}
+              Intuitive
             </Typography>
             <Typography variant="h6">
               I value simple content structure, clean design patterns, and
@@ -97,7 +98,8 @@ export const HomeDescription: React.FC = () => {
         <Grid item xs={12} sm={6} md={6} lg={6}>
           <Box>
             <Typography variant="h4" gutterBottom>
-              <FontAwesomeIcon size="sm" icon={faCogs} /> Dynamic
+              <FontAwesomeIcon size="sm" icon={faCogs} color="#F1C376" />{' '}
+              Dynamic
             </Typography>
             <Typography variant="h6">
               Websites don't have to be static, I love making pages come to
