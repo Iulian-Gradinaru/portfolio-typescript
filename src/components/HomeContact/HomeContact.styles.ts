@@ -29,6 +29,8 @@ export const StylesButton = styled(Button)(() => {
     borderRadius: 10,
     border: '2px solid #606C5D',
     color: '#606C5D',
+    paddingLeft: 20,
+    paddingRight: 20,
     '&:hover': {
       backgroundColor: '#F7E6C4',
     },
@@ -42,5 +44,6 @@ export const StyledChip = styled(Chip)(() => {
     backgroundColor: '#F7E6C4',
     color: '#606C5D',
     border: '2px solid #606C5D',
+    padding: 12,
   };
 });

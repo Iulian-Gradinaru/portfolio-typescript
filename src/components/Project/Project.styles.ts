@@ -1,5 +1,5 @@
 import { styled } from '@mui/system';
-import { Chip, Grid, Box } from '@mui/material';
+import { Chip, Grid, Box, Typography } from '@mui/material';
 
 export const CustomGrid = styled(Grid)(() => {
   return {
@@ -12,9 +12,13 @@ export const CustomGrid = styled(Grid)(() => {
 
 export const CustomChip = styled(Chip)(() => {
   return {
+    backgroundColor: '#F1C376',
     marginTop: '1rem',
-    marginRight: '0.8rem',
+    marginRight: '0.6rem',
     fontSize: '1.2rem',
+    border: '2px solid #606C5D',
+    color: 'white',
+    height: 40,
   };
 });
 
@@ -43,11 +47,17 @@ export const Stacklinks = styled(Box)(() => {
   return {
     display: 'flex',
     '& svg': {
-      color: 'black',
+      color: '#606C5D',
       '&:hover': {
-        color: 'red',
+        color: '#F1C376',
       },
     },
+  };
+});
+
+export const StylesTypography = styled(Typography)(() => {
+  return {
+    color: '#606C5D',
   };
 });
 
@@ -67,7 +77,7 @@ export const LargeImageDiv = styled('div')(() => {
     display: 'flex',
     width: '87%',
     height: '73%',
-    border: '10px solid #E0E0E0',
+    border: '10px solid black',
     borderRadius: 10,
   };
 });
@@ -75,7 +85,7 @@ export const LargeImageDiv = styled('div')(() => {
 export const TabletImageDiv = styled('div')(() => {
   return {
     zIndex: 2,
-    border: '10px solid #E0E0E0',
+    border: '10px solid black',
     display: 'flex',
     width: '31%',
     height: '37%',
@@ -88,8 +98,7 @@ export const TabletImageDiv = styled('div')(() => {
 export const MobileImageDiv = styled('div')(() => {
   return {
     zIndex: 2,
-
-    border: '10px solid #E0E0E0',
+    border: '10px solid black',
     display: 'flex',
     width: '17%',
     height: '32%',

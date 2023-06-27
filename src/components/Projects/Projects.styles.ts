@@ -9,5 +9,6 @@ export const Container = styled(Paper)(() => {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
+    // color: '#606C5D',
   };
 });

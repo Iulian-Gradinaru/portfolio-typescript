@@ -9,6 +9,7 @@ export const Container = styled('div')(() => {
     justifyContent: 'center',
     textAlign: 'center',
     margin: '-7px',
+    color: '#606C5D',
   };
 });
 

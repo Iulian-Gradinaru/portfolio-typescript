@@ -1,5 +1,8 @@
 import FaceDetectApp from '../../assets/face-detect-app.png';
 import LightsOut from '../../assets/lights-out.png';
+import LightOutTablet from '../../assets/lights-out-tablet.png';
+import LightOutTelephone from '../../assets/lights-out-telephone.png';
+
 import Yathzee from '../../assets/yahtzee.png';
 import Hangman from '../../assets/hangman.png';
 
@@ -7,6 +10,8 @@ export interface Project {
   title: string;
   description: string;
   imgUrl: string;
+  imgUrl1: string;
+  imgUrl2: string;
   stack: Stack[];
   github: string;
   live: string;
@@ -29,6 +34,8 @@ export const projects: Project[] = [
     description:
       "Smart-Brain is a simple app that makes use of Clarifai's face detection API. In order to make the project more alluring, depending on the number of faces you detect, you get a score. The entire app makes use of React's useContext hook which makes state management easy, Material-UI's custom components that are built with the material design in mind and MongoDB, as one of the best databases for modern applications.",
     imgUrl: FaceDetectApp,
+    imgUrl1: FaceDetectApp,
+    imgUrl2: FaceDetectApp,
     stack: [
       Stack.React,
       Stack.MaterialUi,
@@ -63,6 +70,8 @@ export const projects: Project[] = [
     description:
       'Hangman is a game application developed using TypeScript, which represents a digital version of the classic game with the same name. The objective is to guess a word by selecting the correct letters within a limited number of attempts. The Hangman application was developed in TypeScript, with a well-structured architecture and modular code, highlighting skills in object-oriented programming and application state management.',
     imgUrl: Hangman,
+    imgUrl1: Hangman,
+    imgUrl2: Hangman,
     stack: [Stack.React, Stack.MaterialUi, Stack.TypeScript],
     github: 'https://github.com/Iulian-Gradinaru/hangman-ts',
     live: 'https://react-colors-jet.vercel.app/',
@@ -72,6 +81,8 @@ export const projects: Project[] = [
     description:
       "Lights Out is a game made in React, based on the popular electronic game released in the 90's. The game consists of a 5 by 5 grid of lights. When the game starts, a random number or a stored pattern of these lights is switched on. Pressing any of the lights will toggle it and the adjacent lights. The goal of the puzzle is to switch all the lights off, preferably in as few button presses as possible.",
     imgUrl: LightsOut,
+    imgUrl1: LightOutTablet,
+    imgUrl2: LightOutTelephone,
     stack: [Stack.React, Stack.TypeScript],
     github: 'https://github.com/cyps1000/lights-out',
     live: 'https://github.com/Iulian-Gradinaru/lights-out-ts',
@@ -81,6 +92,8 @@ export const projects: Project[] = [
     description:
       'Yahtzee is a mix of casual, light-weight gambling and strategy, packaged nicely into a React only application. The objective of the game is to score points by rolling five dice to make certain combinations. You have 3 rolls, you are able to lock each dice and choose wisely from the table scores,',
     imgUrl: Yathzee,
+    imgUrl1: Yathzee,
+    imgUrl2: Yathzee,
     stack: [Stack.React],
     github: 'https://github.com/cyps1000/yahtzee',
     live: 'https://github.com/Iulian-Gradinaru/yahtzee-ts',

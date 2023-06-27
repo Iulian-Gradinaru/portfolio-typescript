@@ -35,7 +35,9 @@ export const CustomButton = styled(Button)(() => {
     marginTop: '2rem',
     backgroundColor: '#F1C376',
     borderRadius: 10,
-    border: '2px solid black',
+    border: '2px solid #606C5D',
+    paddingLeft: 20,
+    paddingRight: 20,
 
     '& a': {
       textDecoration: 'none',

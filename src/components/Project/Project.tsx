@@ -33,6 +33,7 @@ import {
   CustomBox,
   Stacklinks,
   StackBox,
+  StylesTypography,
   TabletImageDiv,
   ImageContainer,
   LargeImageDiv,
@@ -52,13 +53,7 @@ export const Project: React.FC<ProjectProps> = (props) => {
   const generateStack = () => {
     return project.stack.map(
       (stack: string): JSX.Element => (
-        <CustomChip
-          key={v4()}
-          color="secondary"
-          variant="outlined"
-          label={stack}
-          // className={classes.stacks} gata
-        />
+        <CustomChip key={v4()} variant="outlined" label={stack} />
       )
     );
   };
@@ -114,18 +109,18 @@ export const Project: React.FC<ProjectProps> = (props) => {
             <StylesImage src={project.imgUrl} alt="example-responsive" />
           </LargeImageDiv>
           <TabletImageDiv>
-            <StylesImage src={project.imgUrl} alt="example-responsive" />
+            <StylesImage src={project.imgUrl1} alt="example-responsive" />
           </TabletImageDiv>
           <MobileImageDiv>
-            <StylesImage src={project.imgUrl} alt="example-responsive" />
+            <StylesImage src={project.imgUrl2} alt="example-responsive" />
           </MobileImageDiv>
         </ImageContainer>
       </Grid>
       <CustomGrid item xs={12} sm={12} md={5} lg={5}>
         <CustomBox>
-          <Typography variant="h4" color="secondary">
+          <StylesTypography variant="h4" color="error">
             {project.title}
-          </Typography>
+          </StylesTypography>
           <Stacklinks>
             <Box>{generateGitHubIcon()}</Box>
             <Box>{project.live.length > 0 && generateWebsiteIcon()}</Box>
