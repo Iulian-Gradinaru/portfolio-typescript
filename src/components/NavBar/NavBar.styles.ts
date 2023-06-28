@@ -1,19 +1,20 @@
 import { styled } from '@mui/system';
 import { NavLink } from 'react-router-dom';
 import { CustomNavLinkProps } from './NavBar.types';
+import { FaBars } from 'react-icons/fa';
 
-export const Container = styled('nav')(() => ({
-  backgroundColor: '#F1C376',
-  height: '8vh',
-  display: 'flex',
-  justifyContent: 'flex-end',
-  alignItems: 'center',
-  padding: 10,
-  fontSize: 23,
-  gap: 20,
-  color: '#606C5D',
-  margin: '-7px',
-}));
+// export const Container = styled('nav')(() => ({
+//   backgroundColor: '#F1C376',
+//   height: '8vh',
+//   display: 'flex',
+//   justifyContent: 'flex-end',
+//   alignItems: 'center',
+//   padding: 10,
+//   fontSize: 23,
+//   gap: 20,
+//   color: '#606C5D',
+//   margin: '-7px',
+// }));
 
 export const ContainerParagraph = styled('div')(() => {
   return {
@@ -83,4 +84,53 @@ export const CustomNavLink = styled(NavLink, {
       left: '0',
     },
   }),
+}));
+
+export const Container = styled('nav')(({ theme }) => ({
+  backgroundColor: '#F1C376',
+  height: '8vh',
+  display: 'flex',
+  justifyContent: 'space-between',
+  alignItems: 'center',
+  padding: '0 20px',
+  fontSize: 23,
+  color: '#606C5D',
+  margin: '-7px',
+  [theme.breakpoints.down('sm')]: {
+    flexDirection: 'column',
+    height: 'auto',
+  },
+}));
+
+export const HamburgerIcon = styled(FaBars)(({ theme }) => ({
+  fontSize: 30,
+  color: '#606C5D',
+  cursor: 'pointer',
+  [theme.breakpoints.up('md')]: {
+    display: 'none',
+  },
+}));
+
+export const MobileMenu = styled('div', {
+  shouldForwardProp: (propName) => propName !== 'isOpen',
+})<CustomNavLinkProps>(({ theme, isOpen }) => ({
+  display: isOpen ? 'flex' : 'none',
+  flexDirection: 'column',
+  gap: 20,
+  marginTop: 20,
+  [theme.breakpoints.up('md')]: {
+    display: 'none',
+  },
+}));
+
+export const MobileNavLink = styled(NavLink)(({ theme }) => ({
+  textDecoration: 'none',
+  fontSize: 30,
+  color: '#606C5D',
+  '&:hover': {
+    color: '#F7E6C4',
+  },
+  [theme.breakpoints.down('sm')]: {
+    textAlign: 'center',
+  },
 }));

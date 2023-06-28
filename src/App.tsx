@@ -1,24 +1,11 @@
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-
+import { Fragment } from 'react';
+import { Routes } from './components/Routes';
 import './App.css';
-
-import { NavBar } from './components/NavBar';
-import { Home } from './components/Home';
-import { Portofolio } from './components/Portofolio';
-import { Footer } from './components/Footer';
 
 export const App: React.FC = () => {
   return (
-    <Router>
-      <NavBar />
-      <div>
-        <Switch>
-          <Route exact path="/" render={Home} />
-          <Route exact path="/projects" render={Portofolio} />
-          <Route path="*" render={Home} />
-        </Switch>
-        <Footer />
-      </div>
-    </Router>
+    <Fragment>
+      <Routes />
+    </Fragment>
   );
 };

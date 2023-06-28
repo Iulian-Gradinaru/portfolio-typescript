@@ -3,7 +3,7 @@ import { Button, Typography, Chip } from '@mui/material';
 
 export const Container = styled('div')(() => {
   return {
-    backgroundColor: '#F7E6C4',
+    backgroundColor: '#F1C376',
     padding: '0 1rem',
     paddingTop: '3rem',
     display: 'flex',
