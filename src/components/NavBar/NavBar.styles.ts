@@ -3,19 +3,6 @@ import { NavLink } from 'react-router-dom';
 import { CustomNavLinkProps } from './NavBar.types';
 import { FaBars } from 'react-icons/fa';
 
-// export const Container = styled('nav')(() => ({
-//   backgroundColor: '#F1C376',
-//   height: '8vh',
-//   display: 'flex',
-//   justifyContent: 'flex-end',
-//   alignItems: 'center',
-//   padding: 10,
-//   fontSize: 23,
-//   gap: 20,
-//   color: '#606C5D',
-//   margin: '-7px',
-// }));
-
 export const ContainerParagraph = styled('div')(() => {
   return {
     display: 'flex',
@@ -24,16 +11,29 @@ export const ContainerParagraph = styled('div')(() => {
     flexGrow: 1,
     cursor: 'pointer',
     margin: 0,
+    padding: 10,
   };
 });
 
-export const Paragraph = styled('p')(() => ({
+export const Paragraph = styled('p')(({ theme }) => ({
   display: 'flex',
   justifyContent: 'flex-start',
   alignItems: 'center',
   margin: 0,
   paddingLeft: 22,
+  paddingTop: 10,
   letterSpacing: '0.1rem',
+  [theme.breakpoints.down('sm')]: {
+    paddingLeft: 0,
+  },
+}));
+
+export const ContainerWrapper = styled('div')(() => ({
+  display: 'flex',
+  justifyContent: 'space-between',
+  alignItems: 'center',
+  flexGrow: 1,
+  marginRight: '20px',
 }));
 
 export const ContainerLinks = styled('div')(() => {
@@ -96,6 +96,7 @@ export const Container = styled('nav')(({ theme }) => ({
   fontSize: 23,
   color: '#606C5D',
   margin: '-7px',
+
   [theme.breakpoints.down('sm')]: {
     flexDirection: 'column',
     height: 'auto',
@@ -106,6 +107,8 @@ export const HamburgerIcon = styled(FaBars)(({ theme }) => ({
   fontSize: 30,
   color: '#606C5D',
   cursor: 'pointer',
+  paddingLeft: 30,
+
   [theme.breakpoints.up('md')]: {
     display: 'none',
   },

@@ -14,12 +14,23 @@ export const Container = styled('div')(() => {
   };
 });
 
-export const GridContainer = styled(Grid)(() => {
+export const GridContainer = styled(Grid)(({ theme }) => {
   return {
     color: '#606C5D',
     '& > *:not(:last-child)': {
       borderRight: '5px solid #606C5D',
-      paddingRight: 3,
+      paddingRight: 7,
+    },
+    [theme.breakpoints.down('sm')]: {
+      '& > *:not(:last-child)': {
+        borderRight: 'none',
+        borderBottom: '5px solid #606C5D',
+        paddingRight: 0,
+        paddingBottom: 24,
+        display: 'flex',
+        justifyContent: 'center',
+        margin: '0 auto',
+      },
     },
   };
 });

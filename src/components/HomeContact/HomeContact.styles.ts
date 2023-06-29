@@ -12,6 +12,7 @@ export const Container = styled('div')(() => {
     textAlign: 'center',
     margin: '-7px',
     color: '#606C5D',
+    paddingBottom: 30,
   };
 });
 
