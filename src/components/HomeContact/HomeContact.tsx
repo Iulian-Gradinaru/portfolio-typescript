@@ -1,7 +1,17 @@
-import React from 'react';
+/**
+ * Imports Material UI components
+ */
 import { Typography, Grid } from '@mui/material';
+
+/**
+ * Imports Font Awesome Icons
+ */
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLightbulb } from '@fortawesome/free-solid-svg-icons';
+
+/**
+ * Imports styles components
+ */
 import {
   Container,
   StylesTypography,
@@ -9,6 +19,9 @@ import {
   StyledChip,
 } from './HomeContact.styles';
 
+/**
+ * Displays the component
+ */
 export const HomeContact: React.FC = () => {
   const handleClick = () => {
     window.location.href = 'mailto:iulian_gradinaru@yahoo.com';

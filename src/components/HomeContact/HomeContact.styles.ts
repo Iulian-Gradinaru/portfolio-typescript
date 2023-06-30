@@ -1,6 +1,16 @@
+/**
+ * Imports styled
+ */
 import { styled } from '@mui/system';
+
+/**
+ * Imports Material UI components
+ */
 import { Button, Typography, Chip } from '@mui/material';
 
+/**
+ * Styles the Container
+ */
 export const Container = styled('div')(() => {
   return {
     backgroundColor: '#F1C376',
@@ -16,12 +26,18 @@ export const Container = styled('div')(() => {
   };
 });
 
+/**
+ * Styles the Styles Typography
+ */
 export const StylesTypography = styled(Typography)(() => {
   return {
     paddingTop: '1.5rem',
   };
 });
 
+/**
+ * Styles the Styles Button
+ */
 export const StylesButton = styled(Button)(() => {
   return {
     fontSize: 25,
@@ -38,6 +54,9 @@ export const StylesButton = styled(Button)(() => {
   };
 });
 
+/**
+ * Styles the Styled Chip
+ */
 export const StyledChip = styled(Chip)(() => {
   return {
     marginTop: '2rem',

@@ -1,6 +1,12 @@
+/**
+ * Imports styled
+ */
 import { styled } from '@mui/system';
 import { Box, Typography } from '@mui/material';
 
+/**
+ * Styles the Container
+ */
 export const Container = styled('div')(() => {
   return {
     backgroundColor: '#F7E6C4',
@@ -18,6 +24,9 @@ export const Container = styled('div')(() => {
   };
 });
 
+/**
+ * Styles the Styles Box
+ */
 export const StylesBox = styled(Box)(() => {
   return {
     display: 'flex',
@@ -27,6 +36,9 @@ export const StylesBox = styled(Box)(() => {
   };
 });
 
+/**
+ * Styles the Styles Typography
+ */
 export const StylesTypography = styled(Typography)(() => {
   return {
     display: 'flex',

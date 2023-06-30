@@ -1,10 +1,22 @@
-import React from 'react';
+/**
+ * Imports Material UI components
+ */
 import { Typography, Link } from '@mui/material';
+
+/**
+ * Imports Font Awesome Icons
+ */
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
+/**
+ * Imports styles components
+ */
 import { Container, StylesBox, StylesTypography } from './Footer.styles';
 
+/**
+ * Displays the component
+ */
 export const Footer: React.FC = () => {
   return (
     <Container>
