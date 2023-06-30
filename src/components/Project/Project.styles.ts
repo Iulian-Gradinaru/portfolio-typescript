@@ -1,6 +1,16 @@
+/**
+ * Imports styled
+ */
 import { styled } from '@mui/system';
+
+/**
+ * Imports Material UI components
+ */
 import { Chip, Grid, Box, Typography } from '@mui/material';
 
+/**
+ * Styles the Custom Grid
+ */
 export const CustomGrid = styled(Grid)(() => {
   return {
     display: 'flex',
@@ -10,6 +20,9 @@ export const CustomGrid = styled(Grid)(() => {
   };
 });
 
+/**
+ * Styles the Custom Chip
+ */
 export const CustomChip = styled(Chip)(() => {
   return {
     backgroundColor: '#F1C376',
@@ -22,6 +35,9 @@ export const CustomChip = styled(Chip)(() => {
   };
 });
 
+/**
+ * Styles the Custom Img
+ */
 export const CustomImg = styled('img')(() => {
   return {
     display: 'block',
@@ -30,6 +46,9 @@ export const CustomImg = styled('img')(() => {
   };
 });
 
+/**
+ * Styles the Custom Box
+ */
 export const CustomBox = styled(Box)(() => {
   return {
     marginBottom: '2rem',
@@ -37,13 +56,19 @@ export const CustomBox = styled(Box)(() => {
   };
 });
 
+/**
+ * Styles the Stack Box
+ */
 export const StackBox = styled(Box)(() => {
   return {
     marginBottom: '2rem',
   };
 });
 
-export const Stacklinks = styled(Box)(() => {
+/**
+ * Styles the Stack Links
+ */
+export const StackLinks = styled(Box)(() => {
   return {
     display: 'flex',
     '& svg': {
@@ -55,12 +80,18 @@ export const Stacklinks = styled(Box)(() => {
   };
 });
 
+/**
+ * Styles the Styles Typography
+ */
 export const StylesTypography = styled(Typography)(() => {
   return {
     color: '#606C5D',
   };
 });
 
+/**
+ * Styles the Image Container
+ */
 export const ImageContainer = styled('div')(() => {
   return {
     display: 'flex',
@@ -72,6 +103,9 @@ export const ImageContainer = styled('div')(() => {
   };
 });
 
+/**
+ * Styles the Large mageDiv
+ */
 export const LargeImageDiv = styled('div')(() => {
   return {
     display: 'flex',
@@ -82,6 +116,9 @@ export const LargeImageDiv = styled('div')(() => {
   };
 });
 
+/**
+ * Styles the Tablet ImageDiv
+ */
 export const TabletImageDiv = styled('div')(() => {
   return {
     zIndex: 2,
@@ -95,6 +132,9 @@ export const TabletImageDiv = styled('div')(() => {
   };
 });
 
+/**
+ * Styles the Mobile ImageDiv
+ */
 export const MobileImageDiv = styled('div')(() => {
   return {
     zIndex: 2,
@@ -109,6 +149,9 @@ export const MobileImageDiv = styled('div')(() => {
   };
 });
 
+/**
+ * Styles the Styles Image
+ */
 export const StylesImage = styled('img')(() => {
   return {
     width: '100%',

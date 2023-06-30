@@ -25,13 +25,14 @@ import {
 import LanguageSharpIcon from '@mui/icons-material/LanguageSharp';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
-import { ProjectProps } from './Project.types';
-
+/**
+ * Imports styles components
+ */
 import {
   CustomGrid,
   CustomChip,
   CustomBox,
-  Stacklinks,
+  StackLinks,
   StackBox,
   StylesTypography,
   TabletImageDiv,
@@ -40,6 +41,11 @@ import {
   StylesImage,
   MobileImageDiv,
 } from './Project.styles';
+
+/**
+ * Imports types
+ */
+import { ProjectProps } from './Project.types';
 
 /**
  * Displays the component
@@ -121,10 +127,10 @@ export const Project: React.FC<ProjectProps> = (props) => {
           <StylesTypography variant="h4" color="error">
             {project.title}
           </StylesTypography>
-          <Stacklinks>
+          <StackLinks>
             <Box>{generateGitHubIcon()}</Box>
             <Box>{project.live.length > 0 && generateWebsiteIcon()}</Box>
-          </Stacklinks>
+          </StackLinks>
           <Typography variant="h6" color="textSecondary">
             {project.description}
           </Typography>

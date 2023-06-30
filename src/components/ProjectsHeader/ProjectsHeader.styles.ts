@@ -1,6 +1,16 @@
+/**
+ * Imports styled
+ */
 import { styled } from '@mui/system';
+
+/**
+ * Imports Material UI components
+ */
 import { Typography } from '@mui/material';
 
+/**
+ * Styles the Container
+ */
 export const Container = styled('div')(() => {
   return {
     padding: '3rem 1rem',
@@ -13,12 +23,18 @@ export const Container = styled('div')(() => {
   };
 });
 
+/**
+ * Styles the Styles Typography
+ */
 export const StylesTypography = styled(Typography)(() => {
   return {
     paddingBottom: '2rem',
   };
 });
 
+/**
+ * Styles the Custom Typography
+ */
 export const CustomTypography = styled(Typography)(() => {
   return {
     letterSpacing: '0.04rem',

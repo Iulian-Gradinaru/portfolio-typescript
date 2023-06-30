@@ -1,6 +1,16 @@
+/**
+ * Imports styled
+ */
 import { styled } from '@mui/system';
+
+/**
+ * Imports Material UI components
+ */
 import { Paper } from '@mui/material';
 
+/**
+ * Styles the Container
+ */
 export const Container = styled(Paper)(() => {
   return {
     backgroundColor: '#F7E6C4',
@@ -9,6 +19,5 @@ export const Container = styled(Paper)(() => {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    // color: '#606C5D',
   };
 });

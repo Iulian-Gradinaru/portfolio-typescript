@@ -1,11 +1,20 @@
-import React from 'react';
+/**
+ * Imports Material UI components
+ */
 import { Typography, Grid } from '@mui/material';
+
+/**
+ * Imports styles components
+ */
 import {
   Container,
   StylesTypography,
   CustomTypography,
 } from './ProjectsHeader.styles';
 
+/**
+ * Displays the component
+ */
 export const ProjectsHeader: React.FC = () => {
   return (
     <Container>

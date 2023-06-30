@@ -6,8 +6,6 @@ import { v4 } from 'uuid';
 /**
  * Imports Material UI components
  */
-// import Paper from "@material-ui/core/Paper";
-
 import { Grid } from '@mui/material';
 
 /**
@@ -20,21 +18,15 @@ import { Project } from '../Project';
  */
 import { projects } from '../utils/projects';
 
-import { Container } from './Projects.styles';
 /**
- * Imports the component styles
+ * Imports styles components
  */
-// import { useStyles } from "./Projects.styles";
+import { Container } from './Projects.styles';
 
 /**
  * Displays the component
  */
 export const Projects: React.FC = () => {
-  /**
-   * Gets the component styles
-   */
-  // const classes = useStyles();
-
   /**
    * Handles generating projects
    */
@@ -44,7 +36,6 @@ export const Projects: React.FC = () => {
 
   return (
     <Container elevation={0} square>
-      {/* className={classes.Projects} */}
       <Grid
         container
         justifyContent="center"
