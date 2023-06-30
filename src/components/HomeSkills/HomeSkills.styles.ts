@@ -1,6 +1,16 @@
+/**
+ * Imports styled
+ */
 import { styled } from '@mui/system';
+
+/**
+ * Imports Material UI components
+ */
 import { Chip, Grid } from '@mui/material';
 
+/**
+ * Styles the Container
+ */
 export const Container = styled('div')(() => {
   return {
     display: 'flex',
@@ -14,6 +24,9 @@ export const Container = styled('div')(() => {
   };
 });
 
+/**
+ * Styles the Grid Container
+ */
 export const GridContainer = styled(Grid)(({ theme }) => {
   return {
     color: '#606C5D',
@@ -35,6 +48,9 @@ export const GridContainer = styled(Grid)(({ theme }) => {
   };
 });
 
+/**
+ * Styles the Styled Chip
+ */
 export const StyledChip = styled(Chip)(() => {
   return {
     backgroundColor: '#F1C376',

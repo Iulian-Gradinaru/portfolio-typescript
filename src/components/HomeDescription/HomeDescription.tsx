@@ -1,14 +1,13 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
+
+/**
+ * Imports Material UI components
+ */
 import { Grid, Box, Typography } from '@mui/material';
-import ResponseImg from '../../assets/Responsive-image.png';
-import {
-  Container,
-  GridImg,
-  CustomImg,
-  CustomButton,
-} from './HomeDescription.styles';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+/**
+ * Imports Font Awesome Icons
+ */
 import {
   faBolt,
   faMobileAlt,
@@ -16,7 +15,26 @@ import {
   faCogs,
   faPencilRuler,
 } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+/**
+ * Imports images
+ */
+import ResponseImg from '../../assets/Responsive-image.png';
+
+/**
+ * Imports styles components
+ */
+import {
+  Container,
+  GridImg,
+  CustomImg,
+  CustomButton,
+} from './HomeDescription.styles';
+
+/**
+ * Displays the component
+ */
 export const HomeDescription: React.FC = () => {
   return (
     <Container>

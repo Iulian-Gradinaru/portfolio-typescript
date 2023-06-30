@@ -2,6 +2,10 @@
  * Imports styled
  */
 import { styled } from '@mui/system';
+
+/**
+ * Imports Material UI components
+ */
 import { Box, Typography } from '@mui/material';
 
 /**

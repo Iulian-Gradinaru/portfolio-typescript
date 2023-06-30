@@ -1,5 +1,11 @@
+/**
+ * Imports styled
+ */
 import { styled } from '@mui/system';
 
+/**
+ * Styles the Container
+ */
 export const Container = styled('div')(() => {
   return {
     backgroundColor: '#F1C376',
@@ -13,6 +19,9 @@ export const Container = styled('div')(() => {
   };
 });
 
+/**
+ * Styles the Container
+ */
 export const Title = styled('h3')(() => {
   return {
     display: 'flex',
@@ -24,6 +33,9 @@ export const Title = styled('h3')(() => {
   };
 });
 
+/**
+ * Styles the Img
+ */
 export const Img = styled('img')(() => {
   return {
     width: '11rem',
@@ -42,6 +54,9 @@ export const Img = styled('img')(() => {
   };
 });
 
+/**
+ * Styles the Descriptions
+ */
 export const Descriptions = styled('h3')(() => {
   return {
     display: 'flex',

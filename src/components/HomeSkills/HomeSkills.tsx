@@ -1,15 +1,32 @@
-import React from 'react';
+/**
+ * External Imports
+ */
+import { v4 } from 'uuid';
+
+/**
+ * Imports Material UI components
+ */
+import { Grid, Box, Typography } from '@mui/material';
+
+/**
+ * Imports Font Awesome Icons
+ */
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCode, faServer, faTools } from '@fortawesome/free-solid-svg-icons';
-import { Grid, Box, Typography } from '@mui/material';
-import { v4 } from 'uuid';
-import { Container, StyledChip, GridContainer } from './HomeSkills.styles';
 
 /**
  * Imports skills
  */
 import { devTools, frontEndSkills, backEndSkills } from '../utils/index';
 
+/**
+ * Imports styles components
+ */
+import { Container, StyledChip, GridContainer } from './HomeSkills.styles';
+
+/**
+ * Displays the component
+ */
 export const HomeSkils: React.FC = () => {
   return (
     <Container>

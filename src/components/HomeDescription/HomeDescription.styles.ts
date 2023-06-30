@@ -1,6 +1,16 @@
+/**
+ * Imports styled
+ */
 import { styled } from '@mui/system';
+
+/**
+ * Imports Material UI components
+ */
 import { Grid, Box, Button } from '@mui/material';
 
+/**
+ * Styles the Container
+ */
 export const Container = styled('div')(() => {
   return {
     display: 'flex',
@@ -15,6 +25,9 @@ export const Container = styled('div')(() => {
   };
 });
 
+/**
+ * Styles the Grid Img
+ */
 export const GridImg = styled(Grid)(() => {
   return {
     width: '100%',
@@ -23,12 +36,18 @@ export const GridImg = styled(Grid)(() => {
   };
 });
 
+/**
+ * Styles the Custom Img
+ */
 export const CustomImg = styled('img')(() => {
   return {
     width: 'inherit',
   };
 });
 
+/**
+ * Styles the Custom Button
+ */
 export const CustomButton = styled(Button)(() => {
   return {
     fontSize: 25,
@@ -53,6 +72,9 @@ export const CustomButton = styled(Button)(() => {
   };
 });
 
+/**
+ * Styles the Custom Box
+ */
 export const CustomBox = styled(Box)(() => {
   return {
     marginBottom: '1rem',
