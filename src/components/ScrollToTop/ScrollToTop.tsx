@@ -1,5 +1,9 @@
 import { Fragment, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+
+/**
+ * Imports type
+ */
 import { ScrollToTopProps } from './ScrollToTop.types';
 
 /**

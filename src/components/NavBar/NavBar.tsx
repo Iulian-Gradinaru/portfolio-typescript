@@ -22,7 +22,6 @@ export const NavBar: React.FC = () => {
   };
 
   const isMobile = true;
-  // Setează valoarea dorită pentru isMobile
 
   const navbarContent =
     isMobile && isMobileView ? (

@@ -1,11 +1,17 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
+/**
+ * Imports components
+ */
 import { NavBar } from '../NavBar';
 import { Home } from '../Home';
 import { Portofolio } from '../Portofolio';
 import { Footer } from '../Footer';
 import { ScrollToTop } from '../ScrollToTop';
 
+/**
+ * Displays the component
+ */
 export const Routes: React.FC = () => {
   return (
     <Router>
