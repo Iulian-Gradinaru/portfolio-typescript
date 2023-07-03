@@ -1,11 +1,17 @@
 import { useState } from 'react';
+
+/**
+ * Imports Material UI components
+ */
 import { useMediaQuery } from '@mui/material';
 
+/**
+ * Imports styles components
+ */
 import {
   Container,
   ContainerParagraph,
   Paragraph,
-  HamburgerIcon,
   ContainerLinks,
   MobileMenu,
   CustomNavLink,
@@ -13,69 +19,60 @@ import {
   ContainerWrapper,
 } from './NavBar.styles';
 
+/**
+ * Displays the component
+ */
 export const NavBar: React.FC = () => {
+  /**
+   * Initializes mobile menu
+   */
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  /**
+   * Handles the mobile view
+   */
   const isMobileView = useMediaQuery('(max-width: 600px)');
 
+  /**
+   * Handles the mobile menu state
+   */
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
-  const isMobile = true;
-
-  const navbarContent =
-    isMobile && isMobileView ? (
-      <>
-        <HamburgerIcon onClick={toggleMobileMenu} />
-        <MobileMenu isOpen={isMobileMenuOpen} to={''}>
-          <MobileNavLink
-            exact={true}
-            to="/"
-            activeStyle={{ color: '#ffff' }}
-            onClick={toggleMobileMenu}
-          >
-            Home
-          </MobileNavLink>
-          <MobileNavLink
-            exact
-            to="/projects"
-            activeStyle={{ color: '#ffff' }}
-            onClick={toggleMobileMenu}
-          >
-            Projects
-          </MobileNavLink>
-        </MobileMenu>
-      </>
-    ) : (
-      <>
-        <ContainerLinks>
-          <CustomNavLink exact={true} to="/" activeStyle={{ color: '#ffff' }}>
-            Home
-          </CustomNavLink>
-          <CustomNavLink exact to="/projects" activeStyle={{ color: '#ffff' }}>
-            Projects
-          </CustomNavLink>
-        </ContainerLinks>
-        <MobileMenu isOpen={isMobileMenuOpen} to={''}>
-          <MobileNavLink
-            exact={true}
-            to="/"
-            activeStyle={{ color: '#ffff' }}
-            onClick={toggleMobileMenu}
-          >
-            Home
-          </MobileNavLink>
-          <MobileNavLink
-            exact
-            to="/projects"
-            activeStyle={{ color: '#ffff' }}
-            onClick={toggleMobileMenu}
-          >
-            Projects
-          </MobileNavLink>
-        </MobileMenu>
-      </>
-    );
+  /**
+   * Handles the Nav content
+   */
+  const navbarContent = (
+    <>
+      <ContainerLinks>
+        <CustomNavLink exact={true} to="/" activeStyle={{ color: '#ffff' }}>
+          Home
+        </CustomNavLink>
+        <CustomNavLink exact to="/projects" activeStyle={{ color: '#ffff' }}>
+          Projects
+        </CustomNavLink>
+      </ContainerLinks>
+      <MobileMenu isOpen={isMobileMenuOpen} to={''}>
+        <MobileNavLink
+          exact={true}
+          to="/"
+          activeStyle={{ color: '#ffff' }}
+          onClick={toggleMobileMenu}
+        >
+          Home
+        </MobileNavLink>
+        <MobileNavLink
+          exact
+          to="/projects"
+          activeStyle={{ color: '#ffff' }}
+          onClick={toggleMobileMenu}
+        >
+          Projects
+        </MobileNavLink>
+      </MobileMenu>
+    </>
+  );
 
   return (
     <Container>
@@ -86,8 +83,9 @@ export const NavBar: React.FC = () => {
             Front End Developer
           </Paragraph>
         </ContainerParagraph>
-        {navbarContent}
+        {!isMobileView && navbarContent}
       </ContainerWrapper>
+      {isMobileView && navbarContent}
     </Container>
   );
 };

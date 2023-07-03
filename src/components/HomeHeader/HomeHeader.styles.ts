@@ -13,7 +13,7 @@ export const Container = styled('div')(() => {
     flexDirection: 'column',
     justifyContent: 'column',
     alignItems: 'center',
-    margin: '-7px',
+    margin: '-8px',
     padding: '3rem 1rem',
     color: '#000000',
   };
@@ -22,7 +22,7 @@ export const Container = styled('div')(() => {
 /**
  * Styles the Container
  */
-export const Title = styled('h3')(() => {
+export const Title = styled('h3')(({ theme }) => {
   return {
     display: 'flex',
     justifyContent: 'center',
@@ -30,6 +30,12 @@ export const Title = styled('h3')(() => {
     fontSize: '2.125rem',
     fontWeight: 400,
     letterSpacing: ' 0.00735em',
+    [theme.breakpoints.down('sm')]: {
+      display: 'none',
+    },
+    [theme.breakpoints.down('md')]: {
+      display: 'none',
+    },
   };
 });
 

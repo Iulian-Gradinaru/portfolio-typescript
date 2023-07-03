@@ -19,7 +19,7 @@ export const Container = styled('div')(() => {
     flexDirection: 'column',
     padding: '3rem 1rem',
     backgroundColor: '#fabe5a',
-    margin: '-7px',
+    margin: '-8px',
   };
 });
 
@@ -36,6 +36,17 @@ export const GridContainer = styled(Grid)(({ theme }) => {
       paddingRight: 7,
     },
     [theme.breakpoints.down('sm')]: {
+      '& > *:not(:last-child)': {
+        borderRight: 'none',
+        borderBottom: '3px solid #000000',
+        paddingRight: 0,
+        paddingBottom: 24,
+        display: 'flex',
+        justifyContent: 'center',
+        margin: '0 auto',
+      },
+    },
+    [theme.breakpoints.down('md')]: {
       '& > *:not(:last-child)': {
         borderRight: 'none',
         borderBottom: '3px solid #000000',

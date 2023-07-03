@@ -20,7 +20,7 @@ export const Container = styled('div')(() => {
     justifyContent: 'center',
     alignItems: 'center',
     textAlign: 'center',
-    margin: '-7px',
+    margin: '-8px',
     '& svg': {
       color: '#fff',
       marginLeft: '1rem',
