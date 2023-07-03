@@ -46,7 +46,7 @@ export const HomeSkils: React.FC = () => {
           <Box>
             <Box>
               <Typography variant="h4" gutterBottom>
-                <FontAwesomeIcon size="sm" icon={faCode} color="#F7E6C4" />{' '}
+                <FontAwesomeIcon size="sm" icon={faCode} color="#fff" />{' '}
                 Front-End
               </Typography>
             </Box>
@@ -59,12 +59,7 @@ export const HomeSkils: React.FC = () => {
             </Box>
             <Box>
               {frontEndSkills.map((i: string) => (
-                <StyledChip
-                  key={v4()}
-                  // color="secondary"
-                  variant="outlined"
-                  label={i}
-                />
+                <StyledChip key={v4()} variant="outlined" label={i} />
               ))}
             </Box>
           </Box>
@@ -74,7 +69,7 @@ export const HomeSkils: React.FC = () => {
           <Box>
             <Box>
               <Typography variant="h4" gutterBottom>
-                <FontAwesomeIcon size="sm" icon={faServer} color="#F7E6C4" />{' '}
+                <FontAwesomeIcon size="sm" icon={faServer} color="#fff" />{' '}
                 Back-End
               </Typography>
             </Box>
@@ -86,12 +81,7 @@ export const HomeSkils: React.FC = () => {
             </Box>
             <Box>
               {backEndSkills.map((i: string) => (
-                <StyledChip
-                  key={v4()}
-                  // color="secondary"
-                  variant="outlined"
-                  label={i}
-                />
+                <StyledChip key={v4()} variant="outlined" label={i} />
               ))}
             </Box>
           </Box>
@@ -101,7 +91,7 @@ export const HomeSkils: React.FC = () => {
           <Box>
             <Box>
               <Typography variant="h4" gutterBottom>
-                <FontAwesomeIcon size="sm" icon={faTools} color="#F7E6C4" />{' '}
+                <FontAwesomeIcon size="sm" icon={faTools} color="#fff" />{' '}
                 Dev-Tools & Others
               </Typography>
             </Box>
@@ -113,12 +103,7 @@ export const HomeSkils: React.FC = () => {
             </Box>
             <Box>
               {devTools.map((i: string) => (
-                <StyledChip
-                  key={v4()}
-                  // color="secondary"
-                  variant="outlined"
-                  label={i}
-                />
+                <StyledChip key={v4()} variant="outlined" label={i} />
               ))}
             </Box>
           </Box>

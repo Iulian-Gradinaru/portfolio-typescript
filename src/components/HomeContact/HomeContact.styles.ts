@@ -13,7 +13,7 @@ import { Button, Typography, Chip } from '@mui/material';
  */
 export const Container = styled('div')(() => {
   return {
-    backgroundColor: '#F1C376',
+    backgroundColor: '#fff',
     padding: '0 1rem',
     paddingTop: '3rem',
     display: 'flex',
@@ -21,7 +21,6 @@ export const Container = styled('div')(() => {
     alignItems: 'center',
     textAlign: 'center',
     margin: '-7px',
-    color: '#606C5D',
     paddingBottom: 30,
   };
 });
@@ -42,10 +41,10 @@ export const StylesButton = styled(Button)(() => {
   return {
     fontSize: 25,
     marginTop: '2rem',
-    backgroundColor: '#F1C376',
+    backgroundColor: '#fabe5a',
     borderRadius: 10,
-    border: '2px solid #606C5D',
-    color: '#606C5D',
+    border: '2px solid #000000',
+    color: '#000000',
     paddingLeft: 20,
     paddingRight: 20,
     '&:hover': {
@@ -61,9 +60,8 @@ export const StyledChip = styled(Chip)(() => {
   return {
     marginTop: '2rem',
     fontSize: '1.2rem',
-    backgroundColor: '#F7E6C4',
-    color: '#606C5D',
-    border: '2px solid #606C5D',
-    padding: 12,
+    backgroundColor: '#fff',
+    border: '2px solid #000000',
+    padding: 25,
   };
 });

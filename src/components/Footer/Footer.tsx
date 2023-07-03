@@ -25,7 +25,7 @@ export const Footer: React.FC = () => {
           <FontAwesomeIcon
             size="lg"
             icon={faGithub}
-            style={{ color: '#F1C376' }}
+            style={{ color: '#fff' }}
           />{' '}
           <Link target="_blank" href="https://github.com/Iulian-Gradinaru">
             GitHub
@@ -35,7 +35,7 @@ export const Footer: React.FC = () => {
           <FontAwesomeIcon
             size="lg"
             icon={faLinkedin}
-            style={{ color: '#F1C376' }}
+            style={{ color: '#fff' }}
           />
           <Link
             target="_blank"
