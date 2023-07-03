@@ -55,7 +55,7 @@ export const HomeDescription: React.FC = () => {
         </GridImg>
         <Grid item xs={12} sm={12} md={5} lg={5} xl={5}>
           <Typography variant="h4" gutterBottom>
-            <FontAwesomeIcon size="sm" icon={faFireAlt} color="#F1C376" />{' '}
+            <FontAwesomeIcon size="sm" icon={faFireAlt} color="#fabe5a" />{' '}
             Blazing Fast Web Applications
           </Typography>
           <Typography variant="h6">
@@ -83,7 +83,7 @@ export const HomeDescription: React.FC = () => {
         <Grid item xs={12} sm={6} md={6} lg={6}>
           <Box>
             <Typography variant="h4" gutterBottom>
-              <FontAwesomeIcon size="sm" icon={faBolt} color="#F1C376" /> Fast
+              <FontAwesomeIcon size="sm" icon={faBolt} color="#fabe5a" /> Fast
             </Typography>
             <Typography variant="h6">
               Fast load times and lag free interactions are my highest priority.
@@ -93,7 +93,7 @@ export const HomeDescription: React.FC = () => {
         <Grid item xs={12} sm={6} md={6} lg={6}>
           <Box>
             <Typography variant="h4" gutterBottom>
-              <FontAwesomeIcon size="sm" icon={faMobileAlt} color="#F1C376" />{' '}
+              <FontAwesomeIcon size="sm" icon={faMobileAlt} color="#fabe5a" />{' '}
               Responsive
             </Typography>
             <Typography variant="h6">
@@ -104,7 +104,7 @@ export const HomeDescription: React.FC = () => {
         <Grid item xs={12} sm={6} md={6} lg={6}>
           <Box>
             <Typography variant="h4" gutterBottom>
-              <FontAwesomeIcon size="sm" icon={faPencilRuler} color="#F1C376" />{' '}
+              <FontAwesomeIcon size="sm" icon={faPencilRuler} color="#fabe5a" />{' '}
               Intuitive
             </Typography>
             <Typography variant="h6">
@@ -116,7 +116,7 @@ export const HomeDescription: React.FC = () => {
         <Grid item xs={12} sm={6} md={6} lg={6}>
           <Box>
             <Typography variant="h4" gutterBottom>
-              <FontAwesomeIcon size="sm" icon={faCogs} color="#F1C376" />{' '}
+              <FontAwesomeIcon size="sm" icon={faCogs} color="#fabe5a" />{' '}
               Dynamic
             </Typography>
             <Typography variant="h6">

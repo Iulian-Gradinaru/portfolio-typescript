@@ -18,10 +18,10 @@ export const Container = styled('div')(() => {
     alignItems: 'center',
     flexDirection: 'column',
 
-    backgroundColor: '#F7E6C4',
+    backgroundColor: '#fff',
     margin: '-7px',
     padding: '3rem 1rem',
-    color: '#606C5D',
+    color: '	#000000',
   };
 });
 
@@ -52,21 +52,21 @@ export const CustomButton = styled(Button)(() => {
   return {
     fontSize: 25,
     marginTop: '2rem',
-    backgroundColor: '#F1C376',
+    backgroundColor: '#fabe5a',
     borderRadius: 10,
-    border: '2px solid #606C5D',
+    border: '2px solid #000000',
     paddingLeft: 20,
     paddingRight: 20,
     marginBottom: 20,
 
     '& a': {
       textDecoration: 'none',
-      color: '#606C5D',
+      color: '#000000',
     },
     '&:hover': {
       backgroundColor: '#F7E6C4',
       '& a': {
-        color: '#606C5D',
+        color: '#000000',
       },
     },
   };

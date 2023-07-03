@@ -31,7 +31,7 @@ export const NavBar: React.FC = () => {
           <MobileNavLink
             exact={true}
             to="/"
-            activeStyle={{ color: '#F7E6C4' }}
+            activeStyle={{ color: '#ffff' }}
             onClick={toggleMobileMenu}
           >
             Home
@@ -39,7 +39,7 @@ export const NavBar: React.FC = () => {
           <MobileNavLink
             exact
             to="/projects"
-            activeStyle={{ color: '#F7E6C4' }}
+            activeStyle={{ color: '#ffff' }}
             onClick={toggleMobileMenu}
           >
             Projects
@@ -49,14 +49,10 @@ export const NavBar: React.FC = () => {
     ) : (
       <>
         <ContainerLinks>
-          <CustomNavLink exact={true} to="/" activeStyle={{ color: '#F7E6C4' }}>
+          <CustomNavLink exact={true} to="/" activeStyle={{ color: '#ffff' }}>
             Home
           </CustomNavLink>
-          <CustomNavLink
-            exact
-            to="/projects"
-            activeStyle={{ color: '#F7E6C4' }}
-          >
+          <CustomNavLink exact to="/projects" activeStyle={{ color: '#ffff' }}>
             Projects
           </CustomNavLink>
         </ContainerLinks>
@@ -64,7 +60,7 @@ export const NavBar: React.FC = () => {
           <MobileNavLink
             exact={true}
             to="/"
-            activeStyle={{ color: '#F7E6C4' }}
+            activeStyle={{ color: '#ffff' }}
             onClick={toggleMobileMenu}
           >
             Home
@@ -72,7 +68,7 @@ export const NavBar: React.FC = () => {
           <MobileNavLink
             exact
             to="/projects"
-            activeStyle={{ color: '#F7E6C4' }}
+            activeStyle={{ color: '#ffff' }}
             onClick={toggleMobileMenu}
           >
             Projects

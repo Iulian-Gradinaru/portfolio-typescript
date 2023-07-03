@@ -54,12 +54,12 @@ export const CustomNavLink = styled(NavLink, {
   textAlign: 'center',
   fontSize: 30,
   position: 'relative',
-  color: '#606C5D',
+  color: '#000000',
   '&::after': {
     width: '0%',
     height: 4,
     display: 'block',
-    backgroundColor: '#F7E6C4',
+    backgroundColor: '#ffff',
     content: '""',
     position: 'absolute',
     top: 34,
@@ -68,16 +68,16 @@ export const CustomNavLink = styled(NavLink, {
       'left 0.4s cubic-bezier(0.215, 0.61, 0.355, 1), width 0.4s cubic-bezier(0.215, 0.61, 0.355, 1)',
   },
   '&:hover': {
-    color: '#F7E6C4',
+    color: '#ffff',
   },
   '&:hover::after': {
     width: '100%',
     top: 34,
     left: '0',
-    color: '#606C5D',
+    color: '#000000',
   },
   ...(isActive && {
-    color: '#606C5D',
+    color: '#000000',
     '&::after': {
       width: '100%',
       top: 34,
@@ -87,14 +87,14 @@ export const CustomNavLink = styled(NavLink, {
 }));
 
 export const Container = styled('nav')(({ theme }) => ({
-  backgroundColor: '#F1C376',
+  backgroundColor: '#fabe5a',
   height: '8vh',
   display: 'flex',
   justifyContent: 'space-between',
   alignItems: 'center',
   padding: '0 20px',
   fontSize: 23,
-  color: '#606C5D',
+  color: '#000000',
   margin: '-7px',
 
   [theme.breakpoints.down('sm')]: {

@@ -14,12 +14,12 @@ import { Typography } from '@mui/material';
 export const Container = styled('div')(() => {
   return {
     padding: '3rem 1rem',
-    backgroundColor: '#F1C376',
+    backgroundColor: '#fabe5a',
     display: 'flex',
     justifyContent: 'center',
     textAlign: 'center',
     margin: '-7px',
-    color: '#606C5D',
+    color: '#000000',
   };
 });
 

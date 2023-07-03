@@ -4,11 +4,6 @@
 import { v4 } from 'uuid';
 
 /**
- * Imports Material UI components
- */
-import { Grid } from '@mui/material';
-
-/**
  * Imports Components
  */
 import { Project } from '../Project';
@@ -21,7 +16,7 @@ import { projects } from '../utils/projects';
 /**
  * Imports styles components
  */
-import { Container } from './Projects.styles';
+import { Container, StylesGrid } from './Projects.styles';
 
 /**
  * Displays the component
@@ -36,7 +31,7 @@ export const Projects: React.FC = () => {
 
   return (
     <Container elevation={0} square>
-      <Grid
+      <StylesGrid
         container
         justifyContent="center"
         direction="row"
@@ -49,7 +44,7 @@ export const Projects: React.FC = () => {
         xl={7}
       >
         {generateProjects()}
-      </Grid>
+      </StylesGrid>
     </Container>
   );
 };

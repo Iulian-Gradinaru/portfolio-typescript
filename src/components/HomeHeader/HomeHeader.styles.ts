@@ -8,14 +8,14 @@ import { styled } from '@mui/system';
  */
 export const Container = styled('div')(() => {
   return {
-    backgroundColor: '#F1C376',
+    backgroundColor: '#fabe5a',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'column',
     alignItems: 'center',
     margin: '-7px',
     padding: '3rem 1rem',
-    color: '#606C5D',
+    color: '#000000',
   };
 });
 
@@ -40,7 +40,7 @@ export const Img = styled('img')(() => {
   return {
     width: '11rem',
     height: '11rem',
-    boxShadow: '0 0 3pt 2pt white',
+    boxShadow: '0 0 3pt 2pt #ffff',
     display: 'flex',
     overflow: 'hidden',
     position: 'relative',
