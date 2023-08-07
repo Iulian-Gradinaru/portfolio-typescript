@@ -23,14 +23,14 @@ export enum Stack {
   Docusaurus = 'Docusaurus',
   NodeJs = 'NodeJS',
   ExpressJs = 'ExpressJS',
-  MongoDb = 'MongoDB',
+  PostgreSQL = 'PostgreSQL',
 }
 
 export const projects: Project[] = [
   {
     title: 'Smart-Brain',
     description:
-      "Smart-Brain is a simple app that makes use of Clarifai's face detection API. In order to make the project more alluring, depending on the number of faces you detect, you get a score. The entire app makes use of React's useContext hook which makes state management easy, Material-UI's custom components that are built with the material design in mind and MongoDB, as one of the best databases for modern applications.",
+      'SmartBrain is an innovative facial recognition platform developed to showcase advanced web development and artificial intelligence skills. The project merges cutting-edge technologies with modern development practices to craft a captivating and functional experience. By harnessing Clarifai AI technology, SmartBrain can accurately identify and label human faces in images with remarkable precision.',
     imgUrl:
       'https://res.cloudinary.com/ztm/image/upload/v1627721870/Portfolio%20-%20CR/smart-brain-min_q4mjfd.png',
 
@@ -40,29 +40,22 @@ export const projects: Project[] = [
       Stack.TypeScript,
       Stack.ExpressJs,
       Stack.NodeJs,
-      Stack.MongoDb,
+      Stack.PostgreSQL,
     ],
     github: 'https://github.com/Iulian-Gradinaru/smartbrain',
     live: 'https://github.com/Iulian-Gradinaru/smartbrain',
   },
-  // {
-  //   title: 'Dev-Connector',
-  //   description:
-  //     'Dev Connector is a social media platform, that connects developers from all over the world. You can set up a profile, post questions, respond to users, like / unlike posts, find and connect with other developers. This app is backed by an express server built in NodeJS, that uses the NoSQL MongoDB as a database for storing all the information and Redux for state management across the entire app.',
-  //   imgUrl:
-  //     'https://res.cloudinary.com/ztm/image/upload/v1627723039/Portfolio%20-%20CR/dev-connector-min_l1dkgl.png',
-  //   stack: [
-  //     Stack.React,
-  //     Stack.Redux,
-  //     Stack.MaterialUi,
-  //     Stack.TypeScript,
-  //     Stack.ExpressJs,
-  //     Stack.NodeJs,
-  //     Stack.MongoDb,
-  //   ],
-  //   github: 'https://github.com/cyps1000/dev-connector',
-  //   live: 'https://devconnector-cyps1000.herokuapp.com/',
-  // },
+  {
+    title: 'Lights Out',
+    description:
+      "Lights Out is a game made in React, based on the popular electronic game released in the 90s. The game consists of a grid that you can choose from 3 by 3, 5 by 5, 9 by 9 lights. You can start the game with help by clicking on the Star icon. Pressing any of the lights will toggle it and adjacent lights. The aim of the puzzle is to turn off all the lights, preferably with as few button presses as possible. Or if you wish you can switch to Lights On where the aim of the puzzle is to turn on all the lights. To make the project more appealing, we've added Top Score, a feature that displays the highest achievements in the game, and Game History is a valuable feature that gives players an overview of previous game sessions.",
+    imgUrl:
+      'https://res.cloudinary.com/ztm/image/upload/v1627724620/Portfolio%20-%20CR/lights-out-min_gp9gvj.png',
+    stack: [Stack.React, Stack.MaterialUi, Stack.TypeScript],
+    github: 'https://github.com/Iulian-Gradinaru/lights-out-ts',
+    live: 'https://iulian-lights-out.netlify.app',
+  },
+
   {
     title: 'Hangman',
     description:
@@ -72,36 +65,17 @@ export const projects: Project[] = [
 
     stack: [Stack.React, Stack.MaterialUi, Stack.TypeScript],
     github: 'https://github.com/Iulian-Gradinaru/hangman-ts',
-    live: 'https://react-colors-jet.vercel.app/',
+    live: 'https://iulian-hangman.netlify.app',
   },
-  {
-    title: 'Lights Out',
-    description:
-      "Lights Out is a game made in React, based on the popular electronic game released in the 90's. The game consists of a 5 by 5 grid of lights. When the game starts, a random number or a stored pattern of these lights is switched on. Pressing any of the lights will toggle it and the adjacent lights. The goal of the puzzle is to switch all the lights off, preferably in as few button presses as possible.",
-    imgUrl:
-      'https://res.cloudinary.com/ztm/image/upload/v1627724620/Portfolio%20-%20CR/lights-out-min_gp9gvj.png',
-    stack: [Stack.React, Stack.TypeScript],
-    github: 'https://github.com/cyps1000/lights-out',
-    live: 'https://github.com/Iulian-Gradinaru/lights-out-ts',
-  },
+
   {
     title: 'Yahtzee!',
     description:
-      'Yahtzee is a mix of casual, light-weight gambling and strategy, packaged nicely into a React only application. The objective of the game is to score points by rolling five dice to make certain combinations. You have 3 rolls, you are able to lock each dice and choose wisely from the table scores,',
+      'Yahtzee is a mix of casual, light-weight gambling and strategy, packaged nicely into a React only application. The objective of the game is to score points by rolling five dice to make certain combinations. You have 3 rolls, you are able to lock each dice and choose wisely from the table scores.',
     imgUrl:
       'https://res.cloudinary.com/ztm/image/upload/v1627725669/Portfolio%20-%20CR/yahtzee-min_aokyls.png',
-    stack: [Stack.React],
+    stack: [Stack.React, Stack.MaterialUi, Stack.TypeScript],
     github: 'https://github.com/cyps1000/yahtzee',
-    live: 'https://github.com/Iulian-Gradinaru/yahtzee-ts',
+    live: 'https://iulian-yahtzee.netlify.app',
   },
-  // {
-  //   title: 'react-material-cli Docs',
-  //   description:
-  //     "react-material-cli Docs is a documentation website made for the open-source NPM package with the same name. It's built on React using Docusaurus, a tool for building optimized websites quickly. The documentation pages are written with Markdown / MDX after which Docusaurus will publish a set of static HTML files ready to serve.",
-  //   imgUrl:
-  //     'https://res.cloudinary.com/ztm/image/upload/v1627726506/Portfolio%20-%20CR/react-material-cli-docs-min_lmovr5.png',
-  //   stack: [Stack.React, Stack.Docusaurus, Stack.TypeScript],
-  //   github: 'https://github.com/cyps1000/react-material-cli-docs',
-  //   live: '',
-  // },
 ];
