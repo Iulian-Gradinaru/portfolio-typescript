@@ -35,7 +35,7 @@ export const ProjectsHeader: React.FC = () => {
         </StylesTypography>
         <CustomTypography variant="h5">
           I specialize in applications made with React. I am a huge fan of
-          one-way data flow and State management ceva. Most of my projects use
+          one-way data flow and State Management. Most of my projects use
           TypeScript, as it saves time catching errors and providing fixes
           before running the code.
         </CustomTypography>

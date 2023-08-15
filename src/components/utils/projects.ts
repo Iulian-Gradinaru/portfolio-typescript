@@ -28,7 +28,7 @@ export const projects: Project[] = [
   {
     title: 'Smart-Brain',
     description:
-      'SmartBrain is an innovative facial recognition platform developed to showcase advanced web development and artificial intelligence skills. The project merges cutting-edge technologies with modern development practices to craft a captivating and functional experience. By harnessing Clarifai AI technology, SmartBrain can accurately identify and label human faces in images with remarkable precision.',
+      'SmartBrain is an innovative facial recognition platform developed to showcase advanced web development and artificial intelligence capabilities. The project combines cutting-edge technologies with modern development practices to create an engaging and functional experience. By leveraging Clarifai AI technology, SmartBrain can identify and tag with remarkable accuracy whether you want a single face or multiple human faces from images.',
     imgUrl: SmartBrain,
 
     stack: [

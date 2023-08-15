@@ -78,10 +78,7 @@ export const Project: React.FC<ProjectProps> = (props) => {
   const generateWebsiteIcon = () => (
     <Box>
       <Tooltip
-        title={`Some of the projects are hosted on heroku free tier.
-        It may take up to 20 seconds to wake up the server 
-        (it goes to sleep if there are no requests for 30 minutes). 
-        Sorry for the inconvenience!`}
+        title="Live Projects"
         aria-label="website"
         placement="right"
         arrow
