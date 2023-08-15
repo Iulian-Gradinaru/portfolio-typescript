@@ -39,8 +39,8 @@ export const projects: Project[] = [
       Stack.NodeJs,
       Stack.PostgreSQL,
     ],
-    github: 'https://github.com/Iulian-Gradinaru/smartbrain',
-    live: 'https://github.com/Iulian-Gradinaru/smartbrain',
+    github: 'https://github.com/Iulian-Gradinaru/smartbrain-fronted',
+    live: 'https://iulian-smartbrain.netlify.app/',
   },
   {
     title: 'Lights Out',
@@ -69,7 +69,7 @@ export const projects: Project[] = [
       'Yahtzee is a mix of casual, light-weight gambling and strategy, packaged nicely into a React only application. The objective of the game is to score points by rolling five dice to make certain combinations. You have 3 rolls, you are able to lock each dice and choose wisely from the table scores.',
     imgUrl: Yathzee,
     stack: [Stack.React, Stack.MaterialUi, Stack.TypeScript],
-    github: 'https://github.com/cyps1000/yahtzee',
+    github: 'https://github.com/Iulian-Gradinaru/yahtzee-ts',
     live: 'https://iulian-yahtzee.netlify.app',
   },
 ];
