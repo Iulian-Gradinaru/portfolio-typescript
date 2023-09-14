@@ -1,6 +1,6 @@
 import SmartBrain from '../../assets/mockup smartbrain.png';
 import LightsOut from '../../assets/mockup lights out.png';
-
+import eShop from '../../assets/e-Shop.png';
 import Yathzee from '../../assets/mockup Yahtzee.png';
 import Hangman from '../../assets/mockup Hangman.png';
 
@@ -26,22 +26,28 @@ export enum Stack {
 
 export const projects: Project[] = [
   {
-    title: 'Smart-Brain',
-    description:
-      'SmartBrain is an innovative facial recognition platform developed to showcase advanced web development and artificial intelligence capabilities. The project combines cutting-edge technologies with modern development practices to create an engaging and functional experience. By leveraging Clarifai AI technology, SmartBrain can identify and tag with remarkable accuracy whether you want a single face or multiple human faces from images.',
-    imgUrl: SmartBrain,
-
-    stack: [
-      Stack.React,
-      Stack.MaterialUi,
-      Stack.TypeScript,
-      Stack.ExpressJs,
-      Stack.NodeJs,
-      Stack.PostgreSQL,
-    ],
-    github: 'https://github.com/Iulian-Gradinaru/smartbrain-fronted',
-    live: 'https://iulian-smartbrain.netlify.app/',
+    title: 'e-Shop',
+    description: `
+    The "e-Shop" project is an e-commerce application developed in TypeScript. With this project, we demonstrated the ability to build an online shopping platform using modern web technologies.
+      
+    Key Features:
+    
+    - The intuitive interface of the app makes it easy for users to navigate and shop.
+    
+    - The implementation of a shopping cart allows users to add and manage products before checkout.
+    
+    - Search functionality helps users quickly find the products they want.
+    
+    - Ability to sort products by price, from lowest to highest or vice versa.
+    
+    - The app is built for use on desktop and mobile devices, ensuring a consistent experience.
+    `,
+    imgUrl: eShop,
+    stack: [Stack.React, Stack.MaterialUi, Stack.TypeScript],
+    github: 'https://github.com/Iulian-Gradinaru/e-shopping-cart-typescript',
+    live: 'https://e-iulianshop.netlify.app/',
   },
+
   {
     title: 'Lights Out',
     description:
@@ -71,5 +77,23 @@ export const projects: Project[] = [
     stack: [Stack.React, Stack.MaterialUi, Stack.TypeScript],
     github: 'https://github.com/Iulian-Gradinaru/yahtzee-ts',
     live: 'https://iulian-yahtzee.netlify.app',
+  },
+
+  {
+    title: 'Smart-Brain',
+    description:
+      'SmartBrain is an innovative facial recognition platform developed to showcase advanced web development and artificial intelligence capabilities. The project combines cutting-edge technologies with modern development practices to create an engaging and functional experience. By leveraging Clarifai AI technology, SmartBrain can identify and tag with remarkable accuracy whether you want a single face or multiple human faces from images.',
+    imgUrl: SmartBrain,
+
+    stack: [
+      Stack.React,
+      Stack.MaterialUi,
+      Stack.TypeScript,
+      Stack.ExpressJs,
+      Stack.NodeJs,
+      Stack.PostgreSQL,
+    ],
+    github: 'https://github.com/Iulian-Gradinaru/smartbrain-fronted',
+    live: 'https://iulian-smartbrain.netlify.app/',
   },
 ];
