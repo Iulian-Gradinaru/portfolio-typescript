@@ -51,6 +51,7 @@ export const HomeContact: React.FC = () => {
           hiring or collaborating. I'd love to hear from you!
         </StylesTypography>
         <StylesButton onClick={handleClick}>Let's Talk!</StylesButton>
+        <StyledChip variant="outlined" label="+40722358516" />
         <StyledChip variant="outlined" label="iulian_gradinaru@yahoo.com " />
       </Grid>
     </Container>
